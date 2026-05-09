@@ -16,7 +16,6 @@ import SignUpForm from "./components/SignUpForm";
 export default function App() {
   return (
     <div className="App">
-      <h1>Sign Up</h1>
       <SignUpForm />
     </div>
   );
