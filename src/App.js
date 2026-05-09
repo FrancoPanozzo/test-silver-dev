@@ -11,26 +11,13 @@ Build a user Signup form in React with the following features.
    1. Utilize the mock API function to handle submissions
 5. Basic aesthetics with pure CSS
 */
-
-function API(data) {
-  return new Promise((res) => {
-    const isRepeated = data.email === "repeated@gmail.com";
-    setTimeout(
-      () =>
-        res({
-          status: isRepeated ? "ERROR" : "OK",
-          message: isRepeated ? "Email is already taken" : undefined,
-        }),
-      1000
-    );
-  });
-}
+import SignUpForm from "./components/SignUpForm";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Form</h1>
-
+      <h1>Sign Up</h1>
+      <SignUpForm />
     </div>
   );
 }
